@@ -1,0 +1,56 @@
+# Julia specific
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/deps.jl
+docs/build/
+docs/site/
+
+# Compiled files
+*.ji
+
+# Package specific
+Manifest.toml
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VSCode
+.vscode/
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# Linux specific
+*~
+
+# CUDA
+*.ptx
+*.cubin
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
+
+# Data files (uncomment if you don't want to track data files)
+# *.csv
+# *.dat
+# *.txt
+
+# Environment files
+.env
+
+# Build artifacts
+/build/
+/bin/
+
+# Dependency directories (uncomment if using a dependency manager that creates these)
+# /deps/
+# /packages/
