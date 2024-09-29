@@ -40,3 +40,7 @@ Warning This code looks like Python but it is really CUDA! You cannot use standa
 
 Tip: Think of the function call as being run 1 time for each thread. The only difference is that cuda.threadIdx.x changes each time.
 
+## Puzzle 2 - Zip
+
+Implement a kernel that adds together each position of a and b and stores it in out. You have 1 thread per position.
+
