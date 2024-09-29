@@ -3,7 +3,7 @@ using CUDA
 function add_kernel(a, increment)
     i = CUDA.threadIdx().x
     if i <= length(a)
-        @inbounds a[i] += increment
+        @inbounds a[i] = i + increment
     end
     return nothing
 end
@@ -19,7 +19,7 @@ a_vec = cu(fill(1.0f0, N_size))
 
 inc_vec = Array(increment_vec(a_vec))
 
-@assert fill(11.0f0, N_size) == inc_vec
+@assert Array([Float32(i) + 10.0f0 for i in 1:length(a_vec)]) == inc_vec
 
 
 
